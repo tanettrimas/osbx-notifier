@@ -1,10 +1,15 @@
 {
   "name": "osbx-notifier",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Notification service for new companies on OSBX",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "pretest": "npm run lint",
+    "lint:fix": "eslint --ext .js,.ts --fix .",
+    "lint": "eslint --ext .js,.ts .",
+    "typecheck": "tsc -p .",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md"
   },
   "repository": {
     "type": "git",
@@ -22,5 +27,40 @@
   "bugs": {
     "url": "https://github.com/tanettrimas/osbx-notifier/issues"
   },
-  "homepage": "https://github.com/tanettrimas/osbx-notifier#readme"
+  "homepage": "https://github.com/tanettrimas/osbx-notifier#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@types/jest": "^26.0.0",
+    "@types/node": "^14.0.13",
+    "@typescript-eslint/eslint-plugin": "^3.2.0",
+    "@typescript-eslint/parser": "^3.2.0",
+    "conventional-changelog-cli": "^2.0.34",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-airbnb-typescript": "^8.0.2",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jest": "^23.13.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "lint-staged": "^10.2.10",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5"
+  }
 }
