@@ -1,0 +1,26 @@
+{
+  "name": "osbx-notifier",
+  "version": "1.0.0",
+  "description": "Notification service for new companies on OSBX",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanettrimas/osbx-notifier.git"
+  },
+  "keywords": [
+    "notification",
+    "sms",
+    "stocks",
+    "shares",
+    "osbx"
+  ],
+  "author": "Tanet Trimas <tanet@trimas.no>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tanettrimas/osbx-notifier/issues"
+  },
+  "homepage": "https://github.com/tanettrimas/osbx-notifier#readme"
+}
