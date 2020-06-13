@@ -4,6 +4,8 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### 1.0.2 (2020-06-13)
 
+Small changes in codebase
+
 ### 1.0.1 (2020-06-13)
 
 Added simple configuration setup for the project at startup. Could be used as a boilerplate for typescript/node development projects.
