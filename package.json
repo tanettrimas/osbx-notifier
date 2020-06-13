@@ -1,6 +1,6 @@
 {
   "name": "osbx-notifier",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Notification service for new companies on OSBX",
   "main": "app.js",
   "scripts": {
