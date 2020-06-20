@@ -1,0 +1,172 @@
+{
+  "data": [
+    {
+      "date": "08.11.2018",
+      "company": "Zenith Energy Ltd",
+      "ticket": "ZENA-ME",
+      "marked": "Merkur Market"
+    },
+    {
+      "date": "03.10.2018",
+      "company": "Sparebanken Telemark",
+      "ticket": "SBTE",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "03.10.2018",
+      "company": "Vistin Pharma ASA",
+      "ticket": "VISTIN",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "01.10.2018",
+      "company": "poLight ASA",
+      "ticket": "PLT",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "04.09.2018",
+      "company": "Awilco Drilling Plc",
+      "ticket": "AWDR",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "29.08.2018",
+      "company": "BRAbank ASA",
+      "ticket": "BRA-ME",
+      "marked": "Merkur Market"
+    },
+    {
+      "date": "28.08.2018",
+      "company": "ADS Crude Carriers Plc",
+      "ticket": "ADSC-ME",
+      "marked": "Merkur Market"
+    },
+    {
+      "date": "26.07.2018",
+      "company": "Seadrill Limited ",
+      "ticket": "SDRL",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "16.07.2018",
+      "company": "Star Bulk Carriers Corp.",
+      "ticket": "SBLK R",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "10.07.2018",
+      "company": "Lifecare AS",
+      "ticket": "LIFE-ME",
+      "marked": "Merkur Market"
+    },
+    {
+      "date": "04.07.2018",
+      "company": "Okeanis Eco Tankers Corp. ",
+      "ticket": "OET-ME",
+      "marked": "Merkur Market"
+    },
+    {
+      "date": "03.07.2018",
+      "company": "Northern Drilling Ltd.",
+      "ticket": "NODL",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "25.06.2018",
+      "company": "Shelf Drilling Ltd.",
+      "ticket": "SHLF",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "20.06.2018",
+      "company": "Lavo.tv AS",
+      "ticket": "LAVO-ME",
+      "marked": "Merkur Market"
+    },
+    {
+      "date": "08.06.2018",
+      "company": "TargetEveryOne AB",
+      "ticket": "TEONE-ME",
+      "marked": "Merkur Market"
+    },
+    {
+      "date": "01.06.2018",
+      "company": "Magseis ASA",
+      "ticket": "MSEIS",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "01.06.2018",
+      "company": "SoftOx Solutions AS",
+      "ticket": "SOFTOX-ME",
+      "marked": "Merkur Market"
+    },
+    {
+      "date": "15.05.2018",
+      "company": "Atlantic Sapphire AS",
+      "ticket": "ASA-ME",
+      "marked": "Merkur Market"
+    },
+    {
+      "date": "03.05.2018",
+      "company": "MPC Container Ships ASA",
+      "ticket": "MPCC",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "27.04.2018",
+      "company": "PCI Biotech Holding ASA",
+      "ticket": "PCIB",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "06.04.2018",
+      "company": "Surnadal Sparebank",
+      "ticket": "SUSB-ME",
+      "marked": "Merkur Market"
+    },
+    {
+      "date": "05.04.2018",
+      "company": "Golden Energy Offshore Services AS",
+      "ticket": "GEOS-ME",
+      "marked": "Merkur Market"
+    },
+    {
+      "date": "23.03.2018",
+      "company": "River iGaming p.l.c.",
+      "ticket": "RIVER-ME",
+      "marked": "Merkur Market"
+    },
+    {
+      "date": "22.03.2018",
+      "company": "Elkem ASA",
+      "ticket": "ELK",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "21.03.2018",
+      "company": "Fjordkraft Holding ASA",
+      "ticket": "FKRAFT",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "15.03.2018",
+      "company": "Sunndal Sparebank ",
+      "ticket": "SUNSB-ME",
+      "marked": "Merkur Market"
+    },
+    {
+      "date": "02.02.2018",
+      "company": "Salmones Camanchaca S.A.",
+      "ticket": "SALMON",
+      "marked": "Oslo Børs"
+    },
+    {
+      "date": "29.01.2018",
+      "company": "MPC Container Ships ASA",
+      "ticket": "MPCC",
+      "marked": "Oslo Axess"
+    }
+  ]
+}
