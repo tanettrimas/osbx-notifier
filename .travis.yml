@@ -1,0 +1,19 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - "node"
+  - "9"
+  - "8"
+  - "7"
+  - "6"
+  - "5"
+  - "4"
+  - "lts/*"
+
+notifications: 
+  email: tanet@trimas.no
+
+scripts: 
+  - npm test -- --runInBand
