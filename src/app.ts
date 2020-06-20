@@ -11,6 +11,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/api', routes);
 
 app.use((req: Request, res: Response, next: NextFunction) => {
+  res.status(404);
   return next(new Error(`Route ${req.originalUrl} was not found!`));
 });
 
