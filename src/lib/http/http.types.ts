@@ -5,8 +5,8 @@ export interface BasicRequestHeaders {
 
 export interface BasicResponse {
   body?: any;
-  statusText?: any;
-  status?: any;
+  statusText?: string;
+  status?: number;
   error?: {
     url: string;
     message: string;
