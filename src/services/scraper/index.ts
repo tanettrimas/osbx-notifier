@@ -17,6 +17,11 @@ function Scraper({ webscraper }: { webscraper: CheerioAPI }): ScraperService {
         },
         method: 'GET',
       });
+
+      if (response.error) {
+        throw new Error('Something went wrong during scraping');
+      }
+
       const html = await webscraper.load(response.body);
       return html;
     } catch (e) {

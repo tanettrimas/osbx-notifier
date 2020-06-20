@@ -3,6 +3,16 @@ export interface BasicRequestHeaders {
   [key: string]: string;
 }
 
+export interface BasicResponse {
+  body?: any;
+  statusText?: any;
+  status?: any;
+  error?: {
+    url: string;
+    message: string;
+    name?: string;
+  };
+}
 export interface BasicRequestOptions {
   url: string;
   method: 'GET' | 'POST' | 'PUT' | 'DELETE';
