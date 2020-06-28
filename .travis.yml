@@ -1,15 +1,13 @@
-sudo: false
-
-matrix: 
+jobs: 
   include: 
     - language: node_js
-    node_js:
-      - "node"
-      - "lts/*"
-    before_script:
-      - cd scraper
-    script: 
-      - npm test -- --runInBand
+      node_js:
+        - "node"
+        - "lts/*"
+      before_script:
+        - cd scraper
+      script: 
+        - npm test -- --runInBand
 
 notifications: 
   email: tanet@trimas.no
