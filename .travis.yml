@@ -4,6 +4,8 @@ jobs:
       node_js:
         - "node"
         - "lts/*"
+      install: 
+        - npm ci
       before_script:
         - cd scraper
       script: 
