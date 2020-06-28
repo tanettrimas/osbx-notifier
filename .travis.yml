@@ -4,10 +4,10 @@ jobs:
       node_js:
         - "node"
         - "lts/*"
+      before_install:
+        - cd scraper
       install: 
         - npm ci
-      before_script:
-        - cd scraper
       script: 
         - npm test -- --runInBand
 
