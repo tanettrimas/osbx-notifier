@@ -1,10 +1,10 @@
+import cheerio from 'cheerio';
 import httpRequester from '../../lib/http';
 
 // TODO: Refactor CheerioElement to a type with only the props needed. E.g only data, name, tag and children
 export interface ScraperService {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  scrape: (rows: CheerioElement[], scrapeFunc: (rows: CheerioElement[]) => any) => any;
-  getHTML: (url: string) => Promise<CheerioStatic>;
+  scrape: (url: string, scrapeFunc: (rows: CheerioElement[]) => any) => any;
 }
 
 function Scraper({ webscraper }: { webscraper: CheerioAPI }): ScraperService {
@@ -30,14 +30,19 @@ function Scraper({ webscraper }: { webscraper: CheerioAPI }): ScraperService {
   }
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  function scrape(rows: CheerioElement[], scrapeFunc: (rows: CheerioElement[]) => any) {
+  async function scrape(url: string, scrapeFunc: (rows: CheerioElement[]) => any) {
+    const $ = await getHTML(url);
+    const table = $('tbody');
+    const [, ...rows] = table.children().toArray();
+    if (!rows) {
+      return [];
+    }
     return scrapeFunc(rows);
   }
 
   return Object.freeze({
-    getHTML,
     scrape,
   });
 }
 
-export default Scraper;
+export default Scraper({ webscraper: cheerio });
