@@ -1,13 +1,34 @@
-sudo: false
+jobs: 
+  include: 
+    - language: node_js
+      node_js: node
+      cache:
+        directories: 
+          - node_modules
+      before_cache: 
+        - rm -f $HOME/.cache/pip/log/debug.log
+        - cd scraper
+      before_install:
+        - cd scraper
+      install: 
+        - npm ci
+      script: 
+        - npm test -- --runInBand
 
-language: node_js
-
-node_js:
-  - "node"
-  - "lts/*"
+    - language: node_js
+      node_js: lts/*
+      cache:
+        directories: 
+          - node_modules
+      before_cache: 
+        - rm -f $HOME/.cache/pip/log/debug.log
+        - cd scraper
+      before_install:
+        - cd scraper
+      install: 
+        - npm ci
+      script: 
+        - npm test -- --runInBand
 
 notifications: 
   email: tanet@trimas.no
-
-scripts: 
-  - npm test -- --runInBand

@@ -1,6 +1,7 @@
 {
   "name": "osbx-notifier",
   "version": "1.0.3",
+  "private": true,
   "description": "Notification service for new companies on OSBX",
   "main": "dist/index.js",
   "scripts": {
